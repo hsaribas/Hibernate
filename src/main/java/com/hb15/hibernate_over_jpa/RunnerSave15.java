@@ -11,18 +11,17 @@ public class RunnerSave15 {
 		student.setName("John Coffee");
 		student.setMathGrade(100);
 				
-		EntityManagerFactory emf=Persistence.createEntityManagerFactory("studentunit");
-		EntityManager em=emf.createEntityManager();
+		EntityManagerFactory emf = Persistence.createEntityManagerFactory("studentunit");
+		EntityManager em = emf.createEntityManager();
 
 		em.getTransaction().begin();
 
-
-		em.persist(student); // we can persist the object
-
+		em.persist(student);//we can persist the object
 
 		em.getTransaction().commit();
 		em.close();
 		emf.close();
+
 	}
 
 }

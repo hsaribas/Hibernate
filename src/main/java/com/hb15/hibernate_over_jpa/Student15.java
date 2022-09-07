@@ -14,14 +14,13 @@ public class Student15 {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	
-    @Column(name="student_name",length=100, nullable=false, unique = false) 
+    @Column(name="student_name", length=100, nullable=false, unique=false)
 	private String name;
     
     private int mathGrade;
     
     @Version
     private Long version;
-    
 
 	public int getId() {
 		return id;
@@ -47,11 +46,9 @@ public class Student15 {
 		this.mathGrade = grade;
 	}
 
-
 	@Override
 	public String toString() {
 		return "Student15 [id=" + id + ", name=" + name + ", grade=" + mathGrade + "]";
 	}
 
-	
 }

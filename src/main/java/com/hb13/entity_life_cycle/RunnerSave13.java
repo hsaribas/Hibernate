@@ -21,27 +21,23 @@ public class RunnerSave13 {
 		student3.setName("Tony Stark");
 		student3.setMathGrade(90);
 		
-		
 
 		Configuration con=new  Configuration().configure("hibernate.cfg.xml").
 				   addAnnotatedClass(Student13.class);
-		
 		SessionFactory sf=con.buildSessionFactory();
 		Session session= sf.openSession();
 		
 		Transaction tx= session.beginTransaction();
 		
-	     //session.save(student1);
-	     
-	    // session.save(student2);
+		//session.save(student1);
+	    //session.save(student2);
 		
-		// session.persist(student3);
+		//session.persist(student3);
 	     
-	     //student2.setName("James Bond is in Persistent state ");
-	     
-	     
-	     //session.persist(student1);
-	    // session.save(student2);
+		//student2.setName("James Bond is in Persistent state");
+
+		//session.persist(student1);
+	    //session.save(student2);
 	    
 		//it makes data to write into database, makes data permanent 
 		

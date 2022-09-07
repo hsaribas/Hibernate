@@ -18,7 +18,6 @@ public class Student13 {
 	private String name;
     
     private int mathGrade;
-    
 
 	public int getId() {
 		return id;
@@ -44,11 +43,9 @@ public class Student13 {
 		this.mathGrade = grade;
 	}
 
-
 	@Override
 	public String toString() {
 		return "Student13 [id=" + id + ", name=" + name + ", grade=" + mathGrade + "]";
 	}
 
-	
 }
